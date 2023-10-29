@@ -1,0 +1,10 @@
+from django.shortcuts import render
+from . import  models
+
+def postView(request):
+    post_value = models.Post.objects.all()
+    context = {
+        'post_key': post_value,
+    }
+    template_name = 'post.html'
+    return render(request, template_name, context)
