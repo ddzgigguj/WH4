@@ -29,7 +29,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
-    'manga_shops',
+    'comix_shops',
 ]
 
 MIDDLEWARE = [

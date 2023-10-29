@@ -2,11 +2,11 @@ from django.shortcuts import render, get_object_or_404
 from django.http import  HttpResponse
 from . import models, forms
 
-def mangaListView(request):
+def comixListView(request):
     manga_value = models.Manga_shops,object.all()
-    html_name = 'manga/manga_list.html'
+    html_name = 'manga/comix_list.html'
     context = {
-        'manga_key': manga_value,
+        'comix_key': manga_value,
     }
     return render(request, html_name, context)
 
